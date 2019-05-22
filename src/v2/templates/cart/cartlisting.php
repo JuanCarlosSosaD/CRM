@@ -29,7 +29,7 @@ $ListTitleText = gettext('Your cart contains') . ' ' . count($cartPeople) . ' ' 
           ?>
           <tr>
             <td>
-              <img src="<?= $Person->getThumbnailURL(); ?>?>" class="direct-chat-img initials-image">&nbsp
+              <img src="<?= $Person->getThumbnailURL(); ?>" class="direct-chat-img initials-image">&nbsp
               <a href="<?= SystemURLs::getRootPath()?>/PersonView.php?PersonID=<?= $Person->getId() ?>"><?= $Person->getFullName() ?></a>
             </td>
             <td><?= $Person->getAddress() ?></td>
